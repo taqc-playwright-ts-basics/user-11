@@ -28,7 +28,7 @@
  */
 
 // TODO: опиши й експортуй TestCase / define and export TestCase
-interface TestCase {
+export interface TestCase {
     id: number;
     name: string;
     status: "passed" | "failed" | "skipped";
