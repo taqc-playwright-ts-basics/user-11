@@ -30,18 +30,18 @@
  *   / describeValue distinguishes string from number without using any
  */
 
-export type Browser = string; // TODO: звузь тип / narrow the type
+export type Browser = "chromium" | "firefox" | "webkit"; // TODO: звузь тип / narrow the type
 
 export function launch(browser: Browser): string {
-  // TODO: реалізуй / implement
-  return "";
+// TODO: реалізуй / implement
+  return `Launching ${browser}...`;
 }
 
 // launch("safari"); // TypeError: "safari" is not assignable to type Browser
 
 export function describeValue(value: string | number): string {
   // TODO: реалізуй / implement
-  return "";
+  return typeof value === 'string' ? `String: ${value}` : `Number: ${value}`;
 }
 
 export {};
